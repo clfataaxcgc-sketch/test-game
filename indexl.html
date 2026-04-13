@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing speed test game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <div class="name">
+            Typing speed test game
+        </div>
+        <div class="container">
+            <div class="message">
+                your playing on 
+                <span class="lvl"> </span> level & you have <span class="seconds"></span> seconds to type the word
+            </div>
+            <div class="start"> start playing</div>
+            <div class="the-word"></div>
+            <input type="text" class="input">
+            <div class="upcoming-words">
+                
+            </div>
+            <div class="control">
+                <div class="time">time left: <span></span> seconds</div>
+                <div class="score">score: <span class="got">0</span>from <span class="total"></span></div>
+                </div>
+
+                <div class="finish">
+
+            </div>
+        </div>
+    </div>
+    <audio class="los" src="museg/los.mp3" preload="auto"></audio>
+    <audio class="win" src="museg/win.mp3" preload="auto"></audio>
+    <script src="Script.js"></script>
+</body>
+</html>

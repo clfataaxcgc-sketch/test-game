@@ -1,0 +1,142 @@
+:root{
+    --min-color:#03A9F4;
+}
+*{
+    --box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.game{
+    background-color: #eee;
+    height: 100vh;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.game .name{
+    background: #03A9F4;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.game .message{
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.message .seconds::after{
+    content: "]";
+    color: red;
+}
+
+.message .seconds::before{
+    content: "[";
+    color: red;
+
+}
+.message .lvl::after{
+    content: "]";
+    color: red;
+
+}
+
+.message .lvl::before{
+    content: "[";
+    color: red;
+
+}
+.message .lvl,
+.message .seconds{
+    color: var(--min-color);
+}
+.container .start{
+
+    background: #FFEB3B;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+.container .the-word{
+
+    text-align: center;
+    font-size: 50px;
+    color: var(--min-color);
+    font-weight: bold;
+    margin: 10px 0;
+}
+input{
+    font-size: 30px;
+    color: var(--min-color);
+    width: 100%;
+    padding: 15px ;
+    margin: 10px;
+    border: 3px solid var(--min-color);
+    text-transform: capitalize;
+    border-radius: 20px;
+    text-align: center;
+}
+input:focus{
+    outline: none;
+}
+.upcoming-words{
+    margin: 10px 0;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+
+}
+.upcoming-words div{
+    color: #fff;
+    text-transform: capitalize;
+    background: var(--min-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+.control{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+
+}
+.control span{
+font-weight: bold;
+color: var(--min-color);
+}
+.finish{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+.finish .good{
+color: var(--min-color);
+
+}
+.finish .bad{
+color: red;
+}
